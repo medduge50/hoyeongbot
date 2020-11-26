@@ -59,4 +59,5 @@ async def on_message(message):
         embed.add_field(name="[임시퇴근]", value="임시퇴근하셨습니다.", inline=True)
         await message.channel.send(message.channel, embed=embed)
 
-client.run('NzU5MjIzMzA2ODcxNjM2MDEw.X26Xzg.HMYLYIuI6MFY4THcoMocA9a0nSc')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
